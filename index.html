@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Trang Chủ - Động Vật</title>
+<style>
+body { margin:0; font-family:Arial; background:#e8f5e9; }
+/* ===== THANH ĐIỀU HƯỚNG ===== */
+nav { background:#2e7d32; padding:15px; text-align:center; }
+nav a { color:white; text-decoration:none; margin:0 20px; font-weight:bold; }
+nav a:hover { color:#ffeb3b; }
+
+.banner {
+  background: url('https://images.unsplash.com/photo-1564760055775-d63b17a55c44?w=1200') center/cover;
+  height:400px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:white;
+  text-align:center;
+  position:relative;
+}
+
+.banner::before {
+  content:'';
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.4);
+}
+
+.banner-text { position:relative; z-index:1; }
+.banner h1 { font-size:48px; margin:0 0 10px; text-shadow:2px 2px 4px black; }
+/* ===== GIỚI THIỆU ===== */
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.intro img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.intro p {
+  text-align: justify;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #333;
+}
+
+.video-box {
+  max-width:900px;
+  margin:30px auto;
+  padding:20px;
+  background:white;
+  border-radius:10px;
+  box-shadow:0 2px 5px rgba(0,0,0,0.2);
+}
+
+.video-box h2 { color:#2e7d32; margin-bottom:15px; }
+.video-box iframe { width:100%; height:450px; border:none; border-radius:8px; }
+
+.cards {
+  max-width:1000px;
+  margin:30px auto;
+  padding:20px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.card {
+  background:white;
+  padding:30px;
+  border-radius:10px;
+  text-align:center;
+  box-shadow:0 2px 8px rgba(0,0,0,0.1);
+  transition:transform 0.3s;
+}
+
+.card:hover { transform:translateY(-5px); }
+.card h2 { font-size:60px; margin:0; }
+.card h3 { color:#2e7d32; margin:15px 0 10px; }
+.card a {
+  display:inline-block;
+  margin-top:15px;
+  padding:10px 25px;
+  background:#43a047;
+  color:white;
+  text-decoration:none;
+  border-radius:5px;
+}
+.card a:hover { background:#2e7d32; }
+
+footer { background:#1b5e20; color:white; text-align:center; padding:20px; margin-top:40px; }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html">🏠 Trang Chủ</a>
+  <a href="thu.html">🐾 Thú</a>
+  <a href="chim.html">🐦 Chim</a>
+  <a href="ca.html">🐟 Cá</a>
+</nav>
+
+<div class="banner">
+  <div class="banner-text">
+    <h1>🌍 Thế Giới Động Vật</h1>
+    <p style="font-size:20px">Khám phá thiên nhiên kỳ diệu</p>
+  </div>
+</div>
+<!-- GIỚI THIỆU -->
+  <div class="banner-text">
+  <h2>📘 Giới thiệu chung</h2>
+
+  <div class="intro">
+    <img src="https://images.unsplash.com/photo-1555169062-013468b47731" alt="Động vật hoang dã">
+
+    <p>
+      Động vật là nhóm sinh vật đa bào, dị dưỡng, có khả năng vận động và
+      phản ứng linh hoạt với các kích thích từ môi trường xung quanh.
+      Chúng phân bố rộng khắp trên Trái Đất, từ rừng rậm nhiệt đới,
+      sa mạc khô cằn cho đến đại dương sâu thẳm.
+      <br><br>
+      Trong tự nhiên, động vật giữ vai trò vô cùng quan trọng trong
+      chuỗi thức ăn và mạng lưới sinh thái. Chúng góp phần duy trì
+      sự cân bằng sinh thái, kiểm soát số lượng sinh vật khác
+      và hỗ trợ quá trình phát tán hạt giống, thụ phấn cho cây trồng.
+      <br><br>
+      Bên cạnh đó, động vật còn mang giá trị lớn về kinh tế, khoa học
+      và văn hóa, gắn bó mật thiết với đời sống con người.
+      Việc bảo vệ và gìn giữ thế giới động vật chính là bảo vệ
+      tương lai của hệ sinh thái và sự phát triển bền vững của Trái Đất.
+    </p>
+  </div>
+</div>
+
+<div class="video-box">
+  <h2>📹 Video: Động Vật Hoang Dã</h2>
+
+  <video controls width="100%" height="450">
+    <source src="dongvat.mp4" type="video/mp4">
+    Trình duyệt của bạn không hỗ trợ video.
+  </video>
+
+</div>
+<div class="cards">
+  <div class="card">
+    <h2>🦁</h2>
+    <h3>Động Vật Có Vú</h3>
+    <p>Sư tử, voi, cá heo...</p>
+    <a href="https://en.wikipedia.org/wiki/Mammal">Xem Thêm →</a>
+  </div>
+
+  <div class="card">
+    <h2>🦅</h2>
+    <h3>Chim</h3>
+    <p>Đại bàng, chim cánh cụt...</p>
+    <a href="https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_lo%C3%A0i_chim_t%E1%BA%A1i_Vi%E1%BB%87t_Nam">Xem Thêm →</a>
+  </div>
+
+  <div class="card">
+    <h2>🐋</h2>
+    <h3>Sinh Vật Biển</h3>
+    <p>Cá voi, bạch tuộc, cá mập...</p>
+    <a href="https://www.twinkl.com/teaching-wiki/danh-sach-cac-loai-sinh-vat-bien-pho-bien-nhat">Xem Thêm →</a>
+  </div>
+</div>
+
+<footer>
+  <p>🌿 Bảo vệ động vật là bảo vệ tương lai</p>
+  <p>© 2026</p>
+</footer>
+
+</body>
+</html>
